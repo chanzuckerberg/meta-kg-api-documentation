@@ -1,6 +1,6 @@
 # Meta KG API
 
-Meta KG API enables users to query the CZI-Meta Knowledge Graph (KG) which contains bibliographic information for biomedical research output such as journal articles, preprints, datasets, protocols, software, conference proceedings and clinical trial reports. The API is an interface to a graph database that represents the relationships between works, authors, concepts, institutions, etc.  
+Meta KG API enables users to query the CZI-Meta Knowledge Graph (KG) stored in a graph database. The KG contains bibliographic information for biomedical research output (referred to as 'works') such as title, abstract, journal or repository name, author, keywords, citation data etc. A broad range of research outputs is represented in the KG, including journal articles, preprints, datasets, protocols, software, conference proceedings and clinical trial reports.
 
 It is an HTTP read-only API. 
 
