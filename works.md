@@ -11,7 +11,7 @@ a work, or many works, and other information in the graph.
 |field name|data type| notes|
 |----------|---------|------|
 |id|string|This is an id assigned by CZI-Meta|
-|czi_kg|integer||
+|czi_kg|integer|This is an id assigned by CZI-Meta|
 |id|string|This is an id assigned by CZI-Meta|
 |doi|string|Digital object identifier for the work|
 |type|string|work types are listed below|
