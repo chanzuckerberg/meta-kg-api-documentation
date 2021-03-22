@@ -20,8 +20,8 @@ a work, or many works, and other information in the graph.
 |publicationDate|string|Date of publication|
 |studyPhase|array|only applicable for type: ClinicalTrial. Values will be 'Phase 1', 'Phase 2', etc., or "Not Applicable"|
 |studyType|string|only applicable for type: ClinicalTrial. Values are `Interventional` and `Observational`|
-|subject|array||
-|url|string||
+|subject|array|Subject terms associated with a work|
+|url|string|Link to journal or repository site|
 |contributors|array|A listing of contributors to the work, including authors, collaborators|
 |reference|array|Works appearing in the reference list|
 |relation|array|Related work, for example: works cited but not included in the reference list; preprints of a work, etc|
