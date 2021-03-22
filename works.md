@@ -25,7 +25,7 @@ a work, or many works, and other information in the graph.
 |contributors|array|A listing of contributors to the work|
 |reference|array||
 |relation|array||
-|keywords|array|A listing of keywords associated to the work|
+|keywords|array|A listing of keywords associated to the work. Keywords can be provided by authors/publishers AND/OR extracted by Meta using computational algorithms|
 
 ##### Example
 
