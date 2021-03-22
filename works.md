@@ -10,10 +10,10 @@ a work, or many works, and other information in the graph.
 
 |field name|data type| notes|
 |----------|---------|------|
-|id|string||
+|id|string|This is an id assigned by CZI-Meta|
 |czi_kg|integer||
-|id|string||
-|doi|string||
+|id|string|This is an id assigned by CZI-Meta|
+|doi|string|Digital object identifier for the work|
 |type|string|work types are listed below|
 |title|string|The title of the work|
 |abstract|string|The abstract of the work|
@@ -22,9 +22,9 @@ a work, or many works, and other information in the graph.
 |studyType|string|only applicable for type: ClinicalTrial. Values are `Interventional` and `Observational`|
 |subject|array||
 |url|string||
-|contributors|array|A listing of contributors to the work|
-|reference|array||
-|relation|array||
+|contributors|array|A listing of contributors to the work, including authors, collaborators|
+|reference|array|Works appearing in the reference list|
+|relation|array|Related work, for example: works cited but not included in the reference list; preprints of a work, etc|
 |keywords|array|A listing of keywords associated to the work. Keywords can be provided by authors/publishers AND/OR extracted by Meta using computational algorithms|
 
 ##### Example
