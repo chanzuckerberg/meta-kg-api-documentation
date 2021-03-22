@@ -17,7 +17,7 @@ a work, or many works, and other information in the graph.
 |type|string|work types are listed below|
 |title|string|The title of the work|
 |abstract|string|The abstract of the work|
-|publicationDate|string||
+|publicationDate|string|Date of publication|
 |studyPhase|array|only applicable for type: ClinicalTrial. Values will be 'Phase 1', 'Phase 2', etc., or "Not Applicable"|
 |studyType|string|only applicable for type: ClinicalTrial. Values are `Interventional` and `Observational`|
 |subject|array||
@@ -38,7 +38,7 @@ A single work will have a shape in the form:
                 "czi_kg": CZI_ID,
                 "id": "URI",
                 "pmid": "PMID",
-                "doi": "DIO"
+                "doi": "DOI"
             },
             "type": "JournalArticle",
             "title": "Work Title",
