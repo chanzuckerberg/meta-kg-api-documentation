@@ -1,8 +1,6 @@
 # Meta KG API - Works
 
-The works API endpoint is for gathering information about the relationship between
-a work, or many works, and other information in the graph.
-
+The works API endpoint returns metadata about research output in the graph. 
 
 ## Work Response Shape
 
