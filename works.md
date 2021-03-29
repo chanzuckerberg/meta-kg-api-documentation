@@ -16,8 +16,8 @@ The works API endpoint returns metadata about research output in the graph.
 |title|string|The title of the work|
 |abstract|string|The abstract of the work|
 |publicationDate|string|Date of publication|
-|studyPhase|array|only applicable for type: ClinicalTrial. Values will be 'Phase 1', 'Phase 2', etc., or "Not Applicable"|
-|studyType|string|only applicable for type: ClinicalTrial. Values are `Interventional` and `Observational`|
+|studyPhase|array|Only applicable for type: ClinicalTrial. Values will be 'Phase 1', 'Phase 2', etc., or "Not Applicable"|
+|studyType|string|Only applicable for type: ClinicalTrial. Values are `Interventional` and `Observational`|
 |subject|array|Subject terms associated with a work|
 |url|string|Link to journal or repository site|
 |contributors|array|A listing of contributors to the work, including authors, collaborators|
@@ -89,7 +89,7 @@ a work based on a curie, use the format: `WorkType:id`, `doi:id`, `nct:id` and t
 
 ##### Example
 
-Return a work with a given nct identifier:
+Return a work with a given nct identifier, the National Clinical Trial number assgined to clinical studies in ClinicalTrials.gov)
 
 `https://meta-api.staging.meta-infra.org/work/nct:NCT_ID`
 
