@@ -1,6 +1,6 @@
-# Meta KG API
+# Meta API
 
-Meta KG API enables users to query the CZI-Meta Knowledge Graph (KG) stored in a graph database. The KG contains bibliographic information for biomedical research output (referred to as 'works') such as title, abstract, journal or repository name, author, keywords, citation data etc. A broad range of research outputs is represented in the KG, including journal articles, preprints, datasets, protocols, software, conference proceedings and clinical trial reports.
+The Meta API enables users to query the Meta knowledge graph. The graph database contains bibliographic information for biomedical research output (referred to as 'works') such as title, abstract, journal or repository name, author, keywords, references, etc. A broad range of research outputs is represented in the knowledge graph including journal articles, preprints, datasets, protocols, software, conference proceedings and clinical trial reports.
 
 It is an HTTP read-only API. 
 
@@ -22,12 +22,11 @@ know they have published under two similar names, this is a good option.
 
 ### Pagination
 
-Pagination is for loading different pages of the results. The default number
-of results per page is 20.
+The default number of results per page is 500. Pagination enables loading subsequent pages of results to return the full query as the max is exceeded.
 
 ### Sorting
 
-You can sort the by some, but not all fields, of the records.
+Sorting is available for some, but not all fields, of the records. See details in the documentation pages for Works and Person resources.
 
 ## API Resources
 
@@ -35,3 +34,9 @@ The API has the following resources:
 
 * [Work](works.md)
 * [Person](persons.md)
+
+## About Meta
+Meta is a technology project at the Chan Zuckerberg Initiative (CZI). CZI Science's mission is to support the science and technology that will make it possible to cure, manage, or prevent all diseases. Meta is an open, comprehensive knowledge-graph discovery system to enable scientists, physicians, students, patients, and the scientific community to navigate the corpus of biomedical and scientific information. By mapping science as it happens, Meta's mission is to make it possible for researchers to look beyond their field of expertise, generate new hypotheses, understand connections and context, and thus accelerate the process of science as a whole. 
+
+
+
