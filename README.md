@@ -1,3 +1,5 @@
+## The Meta API is currently in pilot phase. Please contact us if you are interested in trying it out.
+
 # Meta API
 
 The Meta API enables users to query the Meta knowledge graph. The graph database contains bibliographic information for biomedical research output (referred to as 'works') such as title, abstract, journal or repository name, author, keywords, references, etc. A broad range of research outputs is represented in the knowledge graph including journal articles, preprints, datasets, protocols, software, conference proceedings and clinical trial reports.
