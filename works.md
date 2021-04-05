@@ -257,8 +257,6 @@ the query string.
 
 `https://meta-api.staging.meta-infra.org/work?person=Jonas`
 
-## Error responses
-
 
 #### Querying the keywords related to a work
 
@@ -269,3 +267,4 @@ the query string.
 
 `https://meta-api.staging.meta-infra.org/work?keywords=space+walk`
 
+## API error response
