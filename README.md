@@ -27,7 +27,7 @@ The API has the following resources:
 * [Work](works.md)
 * [Person](persons.md)
 
-To visualize and interact with the API resources, visit the [Swagger docs](https://meta-api-docs.prod.meta-infra.org/) for the Meta API.
+To visualize and interact with the API resources, visit the Meta API's [Swagger docs](https://meta-api-docs.prod.meta-infra.org/).
 
 ## About Meta
 Meta is a technology project at the Chan Zuckerberg Initiative (CZI). CZI Science's mission is to support the science and technology that will make it possible to cure, manage, or prevent all diseases. Meta is an open, comprehensive knowledge-graph discovery system to enable scientists, physicians, students, patients, and the scientific community to navigate the corpus of biomedical and scientific information. By mapping science as it happens, Meta's mission is to make it possible for researchers to look beyond their field of expertise, generate new hypotheses, understand connections and context, and thus accelerate the process of science as a whole. 
