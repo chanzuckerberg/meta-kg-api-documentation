@@ -1,7 +1,6 @@
-# Meta KG API - Persons
+# Meta KG API - Person
 
-The persons API endpoint is for gathering information about the relationship between
-a person, or many persons, and related work information in the graph.
+The person endpoint is for gathering information about the relationship between a person, or many persons, and related work information in the graph.
 
 ## Person Response Shape
 
@@ -145,3 +144,5 @@ You can do a text query against concept names, matching concepts of works the pe
 ##### Example
 
 `https://meta-api.staging.meta-infra.org/person?keyword=space+walk`
+
+## API error response
