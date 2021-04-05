@@ -83,9 +83,7 @@ There are several types of work represented in the API. These are:
 
 ## Accessing a single work
 
-A single work can be accessed by using a [curie](https://en.wikipedia.org/wiki/CURIE) to look up
-a work based on a curie, use the format: `WorkType:id`, `doi:id`, `nct:id` and the endpoint
-`/work`.
+A single work can be accessed with a [curie](https://en.wikipedia.org/wiki/CURIE). The following are available as per format listed: `WorkType:id`, `doi:id`, `nct:id` with the endpoint `/work`.
 
 ##### Example
 
