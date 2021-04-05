@@ -1,8 +1,8 @@
-# Meta KG API - Works
+# Meta KG API - Work
 
-The works API endpoint returns metadata about research output in the graph. 
+The work endpoint returns metadata about research output in the graph. 
 
-## Work Response Shape
+## Work response shape
 
 ##### Work fields
 
@@ -69,7 +69,7 @@ A single work will have a shape in the form:
         }
 ```
 
-## Work Types
+## Work types
 
 There are several types of work represented in the API. These are:
 
@@ -93,7 +93,7 @@ Return a work with a given nct identifier, the National Clinical Trial number as
 
 `https://meta-api.staging.meta-infra.org/work/nct:NCT_ID`
 
-## Accessing Multiple Works
+## Accessing multiple works
 
 Multiple works can be accessed at the endpoint `/work`
 
@@ -103,7 +103,7 @@ Return a list of works:
 
 `https://meta-api.staging.meta-infra.org/work`
 
-### Filtering Works Results
+### Filtering works results
 
 #### Filtering works by work type
 
@@ -117,7 +117,7 @@ Return a list of works, all with type `JournalArticle`:
 
 `https://meta-api.staging.meta-infra.org/work?filter=type:JournalArticle`
 
-#### Filtering Works By Exact Field Match
+#### Filtering works by exact match
 
 Filtering works will Works can be filtered on a number of fields, both on the work itself
 and related records.
@@ -199,7 +199,7 @@ This can be done with the following fields:
 * `reference.doi`: Example: ``
 * `reference.title`: Example: ``
 
-### Sorting Results
+### Sorting results
 
 Results can be order by adding a `sort` parameter to the query string, with the value in the format
 `field:direction` where direction is either `ASC` or `DESC`. Results can only be sorted by works properties.
@@ -248,10 +248,9 @@ the query string.
 
 `https://meta-api.staging.meta-infra.org/work?query=Calcium+sensing`
 
-#### Querying the people related to a work
+#### Querying the person related to a work
 
-You can do a text query against name field of the people associated with works by adding a `person` parameter to
-the query string.
+You can conduct a text query against name field of the people associated with works by adding a `person` parameter to the query string.
 
 ##### Example
 
