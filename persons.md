@@ -1,6 +1,6 @@
 # Meta API - Person
 
-The person endpoint is for gathering information about the relationship between a person or many persons with related work information in the knowledge graph.
+The person endpoint is for gathering information about the relationship between a person or many persons with related work information in the Meta knowledge graph.
 
 ## Person response shape
 
