@@ -2,7 +2,7 @@
 
 The person endpoint is for gathering information about the relationship between a person, or many persons, and related work information in the graph.
 
-## Person Response Shape
+## Person response shape
 
 ##### Person fields
 
@@ -55,7 +55,7 @@ Return a person with a given orc identifier:
 
 `https://meta-api.staging.meta-infra.org/person/person.orcid:ORC_ID`
 
-## Accessing Multiple Persons
+## Accessing multiple persons
 
 Multiple persons can be accessed at the endpoint `/person`
 
@@ -65,9 +65,9 @@ Return a list of persons:
 
 `https://meta-api.staging.meta-infra.org/person`
 
-### Filtering Persons Results
+### Filtering person results
 
-#### Filtering Persons By Exact Field Match
+#### Filtering person by exact match
 
 Filtering persons will Persons can be filtered on a number of fields, both on the person itself
 and related records.
@@ -77,7 +77,6 @@ of filter keys and values, like this: `?filter=field1:value1,field2:value2`
 
 
 The fields that a person can be filtered on are:
-
 * `name`
 * `orcid`
 * `publicationDate`
@@ -102,7 +101,7 @@ Return a person linked to a given organization:
 
 `https://meta-api.staging.meta-infra.org/person?filter=organization.name:Cornell+University`
 
-### Sorting Results
+### Sorting results
 
 Results can be order by adding a `sort` parameter to the query string, with the value in the format
 `field:direction` where direction is either `ASC` or `DESC`.
@@ -136,7 +135,7 @@ To get page four of the results:
 
 Text queries are useful for when you are looking for terms within the concepts related to a person.
 
-#### Querying the concepts related to a person
+#### Querying concepts related to a person
 
 You can do a text query against concept names, matching concepts of works the people are contributors on,  by adding a
 `keyword` parameter to the query string. This will search for Pubmed and CRE3 concepts only.
