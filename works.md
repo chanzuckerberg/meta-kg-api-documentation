@@ -8,9 +8,9 @@ The work endpoint returns metadata about research output in the graph.
 
 |field name|data type| notes|
 |----------|---------|------|
-|id|string|This is an id assigned by CZI-Meta|
-|czi_kg|integer|This is an id assigned by CZI-Meta|
-|id|string|This is an id assigned by CZI-Meta|
+|id|string|This is an id assigned by Meta|
+|czi_kg|integer|This is an id assigned by Meta|
+|id|string|This is an id assigned by Meta|
 |doi|string|Digital object identifier for the work|
 |type|string|work types are listed below|
 |title|string|The title of the work|
