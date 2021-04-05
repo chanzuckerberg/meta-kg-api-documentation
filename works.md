@@ -1,6 +1,6 @@
-# Meta KG API - Work
+# Meta API - Work
 
-The work endpoint returns metadata about research output in the graph. 
+The work endpoint returns metadata about research works in the Meta knowledge graph. 
 
 ## Work response shape
 
