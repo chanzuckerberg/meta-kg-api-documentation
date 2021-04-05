@@ -264,4 +264,7 @@ the query string.
 
 `https://meta-api.staging.meta-infra.org/work?keywords=space+walk`
 
-## API error response
+## Errors
+We aim to provide meaningful and clear error responses when they occur. Please let us know where these can be improved.
+
+[insert table of error code, description, etc.]
