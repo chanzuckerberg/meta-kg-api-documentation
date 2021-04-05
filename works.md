@@ -257,6 +257,9 @@ the query string.
 
 `https://meta-api.staging.meta-infra.org/work?person=Jonas`
 
+## Error responses
+
+
 #### Querying the keywords related to a work
 
 You can do a text query against name field of the keywords associated with works by adding a `keywords` parameter to
