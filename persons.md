@@ -44,23 +44,17 @@ A person response from the api will have the data in this format:
 ```
 
 ## Accessing a single person
-
-A single person can be accessed by using a [curie](https://en.wikipedia.org/wiki/CURIE) to look up
-a person based on a curie, use the format: `person.orcid:id`, `person.person:id` and the endpoint
-`/person`.
+A single person can be accessed with a [curie](https://en.wikipedia.org/wiki/CURIE). To look up a person based on a curie, use the format: `person.orcid:id`, `person.person:id` and the endpoint `/person`.
 
 ##### Example
-
 Return a person with a given orc identifier:
 
 `https://meta-api.staging.meta-infra.org/person/person.orcid:ORC_ID`
 
 ## Accessing multiple persons
-
 Multiple persons can be accessed at the endpoint `/person`
 
 ##### Example
-
 Return a list of persons:
 
 `https://meta-api.staging.meta-infra.org/person`
@@ -68,15 +62,11 @@ Return a list of persons:
 ### Filtering person results
 
 #### Filtering person by exact match
+The person endpoint can be filtered on a number of fields, both on the person itself and related records.
 
-Filtering persons will Persons can be filtered on a number of fields, both on the person itself
-and related records.
+Filtering is done by adding a filter parameter to the url, followed by a comma delimited list of filter keys and values, like this: `?filter=field1:value1,field2:value2`
 
-Filtering is done by adding a filter parameter to the url, followed by a comma delimited list
-of filter keys and values, like this: `?filter=field1:value1,field2:value2`
-
-
-The fields that a person can be filtered on are:
+Filters include the following:
 * `name`
 * `orcid`
 * `publicationDate`
@@ -84,7 +74,6 @@ The fields that a person can be filtered on are:
 
 
 ##### Examples:
-
 Return a list of persons with a given name:
 
 `https://meta-api.staging.meta-infra.org/person?filter=person.name:Dwayne+Casey`
@@ -102,46 +91,34 @@ Return a person linked to a given organization:
 `https://meta-api.staging.meta-infra.org/person?filter=organization.name:Cornell+University`
 
 ### Sorting results
-
-Results can be order by adding a `sort` parameter to the query string, with the value in the format
-`field:direction` where direction is either `ASC` or `DESC`.
+Order results by adding a `sort` parameter to the query string, with the value in the format `field:direction` where direction is either `ASC` or `DESC`.
 
 Results can be sorted by `person.name`.
 
 
 ##### Example
-
 Sort results by descending name:
 
 `https://meta-api.staging.meta-infra.org/person?sort=person.name:DESC`
 
 ### Pagination
+The API by default returns 500 results per page. You can change this by setting the `limit` parameter, but the maximum
+value for that is 500. 
 
-The API by default returns 20 results per page. You can change this by setting the `limit` parameter, but the maximum
-value for that is 20. 
-
-You can go to different pages of the results
-by adding a `rowStart` parameter to the query string. The default number of results per page
-in the API is 20, so to access page 2, 3, 4, etc., you would specify `rowStart=20`,
-`rowStart=40`, `rowStart=60`, and so on.
+To go to a different page of the results, add a `rowStart` parameter to the query string. The default number of results per page in the API is 500, so to access page 2, 3, 4, etc., you would specify `rowStart=500`,`rowStart=1000`, and so on.
 
 ##### Example
-
 To get page four of the results:
 
 `https://meta-api.staging.meta-infra.org/person?rowStart=60`
 
 ### Text queries within persons
-
 Text queries are useful for when you are looking for terms within the concepts related to a person.
 
 #### Querying concepts related to a person
-
-You can do a text query against concept names, matching concepts of works the people are contributors on,  by adding a
-`keyword` parameter to the query string. This will search for Pubmed and CRE3 concepts only.
+Querying by keywords will match keywords of works associated with the person. Add a`keyword` parameter to the query string. 
 
 ##### Example
-
 `https://meta-api.staging.meta-infra.org/person?keyword=space+walk`
 
 ## API error response
