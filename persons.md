@@ -121,4 +121,7 @@ Querying by keywords will match keywords of works associated with the person. Ad
 ##### Example
 `https://meta-api.staging.meta-infra.org/person?keyword=space+walk`
 
-## API error response
+## Errors
+We aim to provide meaningful and clear error responses when they occur. Please let us know where these can be improved.
+
+[insert table of error code, description, etc.]
