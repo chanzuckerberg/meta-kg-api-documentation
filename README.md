@@ -5,7 +5,7 @@ Meta is a technology project at the Chan Zuckerberg Initiative (CZI). CZI Scienc
 
 The Meta API enables users to query the Meta knowledge graph. The graph database contains bibliographic information for biomedical research output (referred to as 'works') such as title, abstract, journal or repository name, author, keywords, references, etc. A broad range of research outputs is represented in the knowledge graph including journal articles, preprints, datasets, protocols, software, conference proceedings and clinical trial reports.
 
-**The Meta API is HTTP read-only. **
+__The Meta API is HTTP read-only.__
 
 ## Common Operations
 Each API endpoint supports four basic operations. 
@@ -33,5 +33,4 @@ To visualize and interact with the API resources, visit the Meta API's [Swagger 
 
 ## Issues & Feature Requests
 We welcome feedback on the API. Please report any system issues or request features through Github Issues in this repository.
-**If you believe you have found a security issue, please responsibly disclose by contacting us at security@chanzuckerberg.com.
-**
+__If you believe you have found a security issue, please responsibly disclose by contacting us at security@chanzuckerberg.com.__
