@@ -33,5 +33,5 @@ To visualize and interact with the API resources, visit the Meta API's [Swagger 
 Meta is a technology project at the Chan Zuckerberg Initiative (CZI). CZI Science's mission is to support the science and technology that will make it possible to cure, manage, or prevent all diseases. Meta is an open, comprehensive knowledge-graph discovery system to enable scientists, physicians, students, patients, and the scientific community to navigate the corpus of biomedical and scientific information. By mapping science as it happens, Meta's mission is to make it possible for researchers to look beyond their field of expertise, generate new hypotheses, understand connections and context, and thus accelerate the process of science as a whole. 
 
 ## Reporting Security Issues
-If you believe you have found a security issue, please responsibly disclose by contacting us at security@chanzuckerberg.com.”
+If you believe you have found a security issue, please responsibly disclose by contacting us at security@chanzuckerberg.com.
 
