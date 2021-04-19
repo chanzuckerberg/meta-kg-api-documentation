@@ -1,9 +1,11 @@
 ## The Meta API is currently in pilot phase. Please contact us if you are interested in trying it out.
 
 # Meta API
+Meta is a technology project at the Chan Zuckerberg Initiative (CZI). CZI Science's mission is to support the science and technology that will make it possible to cure, manage, or prevent all diseases. Meta is an open, comprehensive knowledge-graph discovery system to enable scientists, physicians, students, patients, and the scientific community to navigate the corpus of biomedical and scientific information. By mapping science as it happens, Meta's mission is to make it possible for researchers to look beyond their field of expertise, generate new hypotheses, understand connections and context, and thus accelerate the process of science as a whole. 
+
 The Meta API enables users to query the Meta knowledge graph. The graph database contains bibliographic information for biomedical research output (referred to as 'works') such as title, abstract, journal or repository name, author, keywords, references, etc. A broad range of research outputs is represented in the knowledge graph including journal articles, preprints, datasets, protocols, software, conference proceedings and clinical trial reports.
 
-The Meta API is HTTP read-only. 
+**The Meta API is HTTP read-only. **
 
 ## Common Operations
 Each API endpoint supports four basic operations. 
@@ -29,10 +31,7 @@ The API has the following resources:
 
 To visualize and interact with the API resources, visit the Meta API's [Swagger docs](https://meta-api-docs.prod.meta-infra.org/).
 
-## About Meta
-Meta is a technology project at the Chan Zuckerberg Initiative (CZI). CZI Science's mission is to support the science and technology that will make it possible to cure, manage, or prevent all diseases. Meta is an open, comprehensive knowledge-graph discovery system to enable scientists, physicians, students, patients, and the scientific community to navigate the corpus of biomedical and scientific information. By mapping science as it happens, Meta's mission is to make it possible for researchers to look beyond their field of expertise, generate new hypotheses, understand connections and context, and thus accelerate the process of science as a whole. 
-
 ## Issues & Feature Requests
 We welcome feedback on the API. Please report any system issues or request features through Github Issues in this repository.
-If you believe you have found a security issue, please responsibly disclose by contacting us at security@chanzuckerberg.com.
-
+**If you believe you have found a security issue, please responsibly disclose by contacting us at security@chanzuckerberg.com.
+**
