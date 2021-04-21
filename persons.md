@@ -44,12 +44,7 @@ A person response from the api will have the data in this format:
 ```
 
 ## Accessing a single person
-A single person can be accessed with a [curie](https://en.wikipedia.org/wiki/CURIE). To look up a person based on a curie, use the format: `person.orcid:id`, `person.person:id` and the endpoint `/person`.
-
-##### Example
-Return a person with a given orcid identifier:
-
-`https://api.meta.org/person/person.orcid:ORC_ID`
+A single person can be accessed with a [curie](https://en.wikipedia.org/wiki/CURIE). To look up a person based on a curie, use the format: `person.person:id` and the endpoint `/person`.
 
 ## Accessing multiple persons
 Multiple persons can be accessed at the endpoint `/person`
