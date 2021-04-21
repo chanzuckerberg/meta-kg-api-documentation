@@ -47,9 +47,9 @@ A person response from the api will have the data in this format:
 A single person can be accessed with a [curie](https://en.wikipedia.org/wiki/CURIE). To look up a person based on a curie, use the format: `person.orcid:id`, `person.person:id` and the endpoint `/person`.
 
 ##### Example
-Return a person with a given orc identifier:
+Return a person with a given orcid identifier:
 
-`https://meta-api.staging.meta-infra.org/person/person.orcid:ORC_ID`
+`https://api.meta.org/person/person.orcid:ORC_ID`
 
 ## Accessing multiple persons
 Multiple persons can be accessed at the endpoint `/person`
@@ -57,7 +57,7 @@ Multiple persons can be accessed at the endpoint `/person`
 ##### Example
 Return a list of persons:
 
-`https://meta-api.staging.meta-infra.org/person`
+`https://api.meta.org/person`
 
 ### Filtering person results
 
@@ -68,7 +68,6 @@ Filtering is done by adding a filter parameter to the url, followed by a comma d
 
 Filters include the following:
 * `name`
-* `orcid`
 * `publicationDate`
 * `organization.name`
 
@@ -76,19 +75,15 @@ Filters include the following:
 ##### Examples:
 Return a list of persons with a given name:
 
-`https://meta-api.staging.meta-infra.org/person?filter=person.name:Dwayne+Casey`
-
-Return a person with a given orcid:
-
-`https://meta-api.staging.meta-infra.org/person?filter=person.orcid:0000-0003-2567-109X`
+`https://api.meta.org/person?filter=person.name:Dwayne+Casey`
 
 Return a person with publications on a given date:
 
-`https://meta-api.staging.meta-infra.org/person?filter=publicationDate:2019-09-24`
+`https://api.meta.org/person?filter=publicationDate:2019-09-24`
 
 Return a person linked to a given organization:
 
-`https://meta-api.staging.meta-infra.org/person?filter=organization.name:Cornell+University`
+`https://api.meta.org/person?filter=organization.name:Cornell+University`
 
 ### Sorting results
 Order results by adding a `sort` parameter to the query string, with the value in the format `field:direction` where direction is either `ASC` or `DESC`.
@@ -99,7 +94,7 @@ Results can be sorted by `person.name`.
 ##### Example
 Sort results by descending name:
 
-`https://meta-api.staging.meta-infra.org/person?sort=person.name:DESC`
+`https://api.meta.org/person?sort=person.name:DESC`
 
 ### Pagination
 The API by default returns 500 results per page. You can change this by setting the `limit` parameter, but the maximum
@@ -110,7 +105,7 @@ To go to a different page of the results, add a `rowStart` parameter to the quer
 ##### Example
 To get page four of the results:
 
-`https://meta-api.staging.meta-infra.org/person?rowStart=60`
+`https://api.meta.org/person?rowStart=60`
 
 ### Text queries within persons
 Text queries are useful for when you are looking for terms within the concepts related to a person.
@@ -119,7 +114,7 @@ Text queries are useful for when you are looking for terms within the concepts r
 Querying by keywords will match keywords of works associated with the person. Add a`keyword` parameter to the query string. 
 
 ##### Example
-`https://meta-api.staging.meta-infra.org/person?keyword=space+walk`
+`https://api.meta.org/person?keyword=space+walk`
 
 ## Errors
 We aim to provide meaningful and clear error responses when they occur. Please let us know where these can be improved.
