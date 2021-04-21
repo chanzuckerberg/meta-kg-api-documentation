@@ -89,7 +89,7 @@ A single work can be accessed with a [curie](https://en.wikipedia.org/wiki/CURIE
 
 Return a work with a given nct identifier, the National Clinical Trial number assgined to clinical studies in ClinicalTrials.gov)
 
-`https://meta-api.staging.meta-infra.org/work/nct:NCT_ID`
+`https://api.meta.org/work/nct:NCT_ID`
 
 ## Accessing multiple works
 
@@ -99,7 +99,7 @@ Multiple works can be accessed at the endpoint `/work`
 
 Return a list of works:
 
-`https://meta-api.staging.meta-infra.org/work`
+`https://api.meta.org/work`
 
 ### Filtering works results
 
@@ -113,7 +113,7 @@ done by adding a filter parameter with the works type specified as a type filter
 
 Return a list of works, all with type `JournalArticle`:
 
-`https://meta-api.staging.meta-infra.org/work?filter=type:JournalArticle`
+`https://api.meta.org/work?filter=type:JournalArticle`
 
 #### Filtering works by exact match
 
@@ -137,21 +137,21 @@ are:
 
 Return a work with a specific PMID or meta kg id:
 
-`https://meta-api.staging.meta-infra.org/work?filter=pmid:21125585`
+`https://api.meta.org/work?filter=pmid:21125585`
 
-`https://meta-api.staging.meta-infra.org/work?filter=meta:21125585`
+`https://api.meta.org/work?filter=meta:21125585`
 
 Return a work with a given nct identifier:
 
-`https://meta-api.staging.meta-infra.org/work?filter=nct:NCT01611792`
+`https://api.meta.org/work?filter=nct:NCT01611792`
 
 Return a list of works from a given date:
 
-`https://meta-api.staging.meta-infra.org/work?filter=publicationDate:2019-09-24`
+`https://api.meta.org/work?filter=publicationDate:2019-09-24`
 
 Return a list of works with a given title:
 
-`https://meta-api.staging.meta-infra.org/work?filter=title:Study+of+bacteria`
+`https://api.meta.org/work?filter=title:Study+of+bacteria`
 
 #### Filtering works with a range of values
 
@@ -170,26 +170,26 @@ Note that you can combine multiple range filters on the same field.
 
 Return a list of works after a given date:
 
-`https://meta-api.staging.meta-infra.org/work?filter=after-publicationDate:2019-09-24`
+`https://api.meta.org/work?filter=after-publicationDate:2019-09-24`
 
 Return a list of works between two dates:
 
-`https://meta-api.staging.meta-infra.org/work?filter=after-publicationDate:2019-09-24,before-publicationDate:2020-09-24`
+`https://api.meta.org/work?filter=after-publicationDate:2019-09-24,before-publicationDate:2020-09-24`
 
 #### Filtering on exact field matches of relationships to the work
 
 You can also specify a field you want to have an exact match with on a relationship of the work.
 This can be done with the following fields:
 
-* `person.name`: Example: `https://meta-api.staging.meta-infra.org/work?filter=person.name:Cristina Battaglia`
-* `person.role`: Example: `https://meta-api.staging.meta-infra.org/work?filter=person.role:creator`
-* `person.orcid`: Example: `https://meta-api.staging.meta-infra.org/work?filter=person.orcid:0000-0003-3025-9657`
-* `journal.title`: Example: `https://meta-api.staging.meta-infra.org/work?filter=journal.title:AARN News Letter`
-* `keyword.name`: Example: `https://meta-api.staging.meta-infra.org/work?filter=keyword.name:1-Carboxyglutamic Acid`
-* `keyword.cui`: Example: `https://meta-api.staging.meta-infra.org/work?filter=keyword.cui:C0000096`
-* `relation.pmid`: Example: `https://meta-api.staging.meta-infra.org/work?filter=relation.pmid:PMID`
-* `relation.nct`: Example: `https://meta-api.staging.meta-infra.org/work?filter=relation.nct:NCT`
-* `relation.doi`: Example: `https://meta-api.staging.meta-infra.org/work?filter=relation.doi:DOI`
+* `person.name`: Example: `https://api.meta.org/work?filter=person.name:Cristina Battaglia`
+* `person.role`: Example: `https://api.meta.org/work?filter=person.role:creator`
+* `person.orcid`: Example: `https://api.meta.org/work?filter=person.orcid:0000-0003-3025-9657`
+* `journal.title`: Example: `https://api.meta.org/work?filter=journal.title:AARN News Letter`
+* `keyword.name`: Example: `https://api.meta.org/work?filter=keyword.name:1-Carboxyglutamic Acid`
+* `keyword.cui`: Example: `https://api.meta.org/work?filter=keyword.cui:C0000096`
+* `relation.pmid`: Example: `https://api.meta.org/work?filter=relation.pmid:PMID`
+* `relation.nct`: Example: `https://api.meta.org/work?filter=relation.nct:NCT`
+* `relation.doi`: Example: `https://api.meta.org/work?filter=relation.doi:DOI`
 * `relation.title`: Example: ``
 * `reference.pmid`: Example: ``
 * `reference.meta`: Example: ``
@@ -206,7 +206,7 @@ Results can be order by adding a `sort` parameter to the query string, with the 
 
 Sort results by descending publication date:
 
-`https://meta-api.staging.meta-infra.org/work?sort=publicationDate:DESC`
+`https://api.meta.org/work?sort=publicationDate:DESC`
 
 ### Pagination
 
@@ -222,7 +222,7 @@ in the API is 20, so to access page 2, 3, 4, etc., you would specify `rowStart=2
 
 To get page four of the results:
 
-`https://meta-api.staging.meta-infra.org/work?rowStart=60`
+`https://api.meta.org/work?rowStart=60`
 
 ### Text queries within works
 
@@ -244,7 +244,7 @@ the query string.
 
 ##### Example
 
-`https://meta-api.staging.meta-infra.org/work?query=Calcium+sensing`
+`https://api.meta.org/work?query=Calcium+sensing`
 
 #### Querying the person related to a work
 
@@ -252,7 +252,7 @@ You can conduct a text query against name field of the people associated with wo
 
 ##### Example
 
-`https://meta-api.staging.meta-infra.org/work?person=Jonas`
+`https://api.meta.org/work?person=Jonas`
 
 
 #### Querying the keywords related to a work
@@ -262,7 +262,7 @@ the query string.
 
 ##### Example
 
-`https://meta-api.staging.meta-infra.org/work?keywords=space+walk`
+`https://api.meta.org/work?keywords=space+walk`
 
 ## Errors
 We aim to provide meaningful and clear error responses when they occur. Please let us know where these can be improved.
