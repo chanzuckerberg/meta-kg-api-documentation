@@ -33,7 +33,7 @@ To visualize and interact with the API resources, visit the Meta API's [Swagger 
 
 ## Issues & Feature Requests
 We welcome feedback on the API. Please report any system issues or request features by creating an [issue in this repository](https://github.com/chanzuckerberg/meta-kg-api-documentation/issues).
-__If you believe you have found a security issue, please responsibly disclose by contacting us at security@chanzuckerberg.com.__
+__If you believe you have found a [security issue](https://github.com/chanzuckerberg/meta-kg-api-documentation/blob/main/SECURITY.md), please responsibly disclose by contacting us at security@chanzuckerberg.com.__
 
 ## License
 All data from the API are available through the [CC0 1.0 Universal license waiver](https://creativecommons.org/publicdomain/zero/1.0/deed.en). This API documentation is licensed under a [MIT software license](https://github.com/chanzuckerberg/meta-kg-api-documentation/blob/main/LICENSE.md).
