@@ -29,7 +29,7 @@ The API has the following resources:
 * [Work](works.md)
 * [Person](persons.md)
 
-To visualize and interact with the API resources, visit the Meta API's [Swagger docs](https://meta-api-docs.prod.meta-infra.org/).
+To visualize and interact with the API resources, visit the Meta API's [Swagger docs](https://api-docs.meta.org/).
 
 ## Issues & Feature Requests
 We welcome feedback on the API. Please report any system issues or request features by creating an [issue in this repository](https://github.com/chanzuckerberg/meta-kg-api-documentation/issues).
