@@ -27,7 +27,7 @@ Sorting is available for some, but not all fields, of the records. See details i
 ## API Resources
 The API has the following resources:
 * [Work](https://github.com/chanzuckerberg/meta-kg-api-documentation/blob/main/works.md)
-* [Person](persons.md)
+* [Person](https://github.com/chanzuckerberg/meta-kg-api-documentation/blob/main/persons.md)
 
 To visualize and interact with the API resources, visit the Meta API's [Swagger docs](https://api-docs.meta.org/).
 
