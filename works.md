@@ -117,8 +117,7 @@ Return a list of works, all with type `JournalArticle`:
 
 #### Filtering works by exact match
 
-Filtering works will Works can be filtered on a number of fields, both on the work itself
-and related records.
+Works can be filtered on a number of fields, both on the work itself and related records.
 
 Filtering is done by adding a filter parameter to the url, followed by a comma delimited list
 of filter keys and values, like this: `?filter=field1:value1,field2:value2` The fields that a work can be filtered on
