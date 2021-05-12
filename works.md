@@ -266,4 +266,18 @@ the query string.
 ## Errors
 We aim to provide meaningful and clear error responses when they occur. Please let us know where these can be improved.
 
-[insert table of error code, description, etc.]
+Example of error payload: 
+```json
+{
+    "statusCode": 400,
+    "timestamp": "2021-01-01T19:08:32.547709",
+    "message": "Unable to find work type: ErrorExample, allowed work types are: software, protocol, dataset, journalarticle, preprint, conferenceproceeding, clinicaltrial",
+    "instance": "uri=/work"
+}
+```
+
+| Status Code| Message| notes|
+|-----------|--------|------|
+| 400 | Bad Request, change the parameters provided and try again | Incorrect information will be returned in a human readable (english only) description |
+| 500 | Server Error, do not try request again | There was a non recoverable error on our backend, please provide information to the support channels to investigate |
+| 500 | Missing Data Error, wait before trying request again | Data was missing when it should have been proivided. This can occur during periods of large ingestion of data. If this error is still present after 5 minutes please contact the support channel |
