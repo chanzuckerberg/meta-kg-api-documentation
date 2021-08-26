@@ -21,9 +21,12 @@ The work endpoint returns metadata about research works in the Meta knowledge gr
 |subject|array|Subject terms associated with a work|
 |url|string|Link to journal or repository site|
 |contributors|array|A listing of contributors to the work, including authors, collaborators|
+|fundingOrganization|array|Contains information listing the funders of the work.|
+|container|object|Typically contains information about the publication of the work, but more generally the information here is about the container of the work.|
 |reference|array|Works appearing in the reference list|
 |relation|array|Related work, for example: works cited but not included in the reference list; preprints of a work, etc|
 |keywords|array|A listing of keywords associated to the work. Keywords can be provided by authors/publishers AND/OR extracted by Meta using computational algorithms|
+|License|array|The license under which the work was released. For example, this may contain the terms and conditions under which a work is licensed, or for software it could refer to the (potentially open-source) license of the work (e.g. GPL v3)|
 
 ##### Example
 
@@ -55,6 +58,23 @@ A single work will have a shape in the form:
                     "authorIndex": 0
                 }
             ],
+            "fundingOrganization": [
+                {
+                    "id": "http://meta.org/kg/publication/FundingOrganization/036450",
+                    "identifiers": {
+                        "doi": "https://doi.org/10.13039/501100003593"
+                    },
+                    "name": "Conselho Nacional de Desenvolvimento Científico e Tecnológico"
+                }
+            ],
+            "container": {
+                "type": "JOURNAL",
+                "identifiers": {
+                    "czi_kg": 22290,
+                    "id": "http://meta.org/kg/publication/Journal/022290"
+                },
+                "name": "Hippocampus"
+            }
             "references": [],
             "relation": [],
             "keywords": [
@@ -151,6 +171,10 @@ Return a list of works from a given date:
 Return a list of works with a given title:
 
 `https://api.meta.org/work?filter=title:Study+of+bacteria`
+
+Return a list of works with a given funding organization:
+
+`https://api.meta.org/work?filter=funder.doi:10.13039/501100003593`
 
 #### Filtering works with a range of values
 
