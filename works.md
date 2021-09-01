@@ -76,7 +76,13 @@ A single work will have a shape in the form:
                 "name": "Hippocampus"
             }
             "references": [],
-            "relation": [],
+            "relation": [
+                {
+                    "relation": "MENTION",
+                    "type": "Software",
+                    "title": "MassHunter"
+                }
+            ],
             "keywords": [
                 {
                     "term": "Woman",
@@ -223,6 +229,14 @@ This can be done with the following fields:
 * `reference.nct`: Example: ``
 * `reference.doi`: Example: ``
 * `reference.title`: Example: ``
+
+#### Filtering on multiple keyword exact match
+
+Works can be filtered on multiple keyword terms. 
+
+Users can add multiple keyword terms in the API request, like this: `?filter=keyword.name:Curiosity,keyword.name:Proxemics`. API will display works where both keywords are mentioned. 
+
+`https://api.meta.org/work?filter=keyword.name:Curiosity,keyword.name:Proxemics&limit=5`
 
 ### Sorting results
 
