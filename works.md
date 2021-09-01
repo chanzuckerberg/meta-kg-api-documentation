@@ -8,9 +8,7 @@ The work endpoint returns metadata about research works in the Meta knowledge gr
 
 |field name|data type| notes|
 |----------|---------|------|
-|id|string|This is an id assigned by Meta|
 |czi_kg|integer|This is an id assigned by Meta|
-|id|string|This is an id assigned by Meta|
 |doi|string|Digital object identifier for the work|
 |type|string|work types are listed below|
 |title|string|The title of the work|
@@ -34,7 +32,7 @@ A single work will have a shape in the form:
 
 ```
  {
-            "id": "URI",
+            
             "identifiers": {
                 "czi_kg": CZI_ID,
                 "id": "URI",
@@ -48,21 +46,24 @@ A single work will have a shape in the form:
             "url": "URL",
             "contributors": [
                 {
-                    "id": "http://meta.org/kg/publication/Person/1214535",
                     "identifiers": {
                         "czi_kg": CZI_ID,
-                        "orc_id": "ORC_ID",
-                        "id": "URI"
+                        "orc_id": "ORC_ID"
                     },
                     "name": "Author Name",
-                    "authorIndex": 0
+                    "authorIndex": 0,
+                    "organization": {
+                        "name": "Org Name",
+                        "identifiers": {
+                            "ror": "ROR identifier"
+                        }
+                    }
                 }
             ],
             "fundingOrganization": [
                 {
-                    "id": "http://meta.org/kg/publication/FundingOrganization/036450",
                     "identifiers": {
-                        "doi": "https://doi.org/10.13039/501100003593"
+                        "doi": "DOI"
                     },
                     "name": "Conselho Nacional de Desenvolvimento Científico e Tecnológico"
                 }
@@ -70,8 +71,7 @@ A single work will have a shape in the form:
             "container": {
                 "type": "JOURNAL",
                 "identifiers": {
-                    "czi_kg": 22290,
-                    "id": "http://meta.org/kg/publication/Journal/022290"
+                    "czi_kg": 22290
                 },
                 "name": "Hippocampus"
             }
@@ -150,7 +150,7 @@ are:
 * `abstract`: filter by exact abstract match.
 * `nct`
 * `studyPhase`
-* `iri`
+
 
 ##### Examples:
 
@@ -175,6 +175,10 @@ Return a list of works with a given title:
 Return a list of works with a given funding organization:
 
 `https://api.meta.org/work?filter=funder.doi:10.13039/501100003593`
+
+Return a list of works with a given license name:
+
+`https://api.meta.org/work?filter=license.name:MIT%20License&limit=20`
 
 #### Filtering works with a range of values
 
