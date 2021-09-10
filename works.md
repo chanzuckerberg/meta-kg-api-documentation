@@ -18,7 +18,7 @@ The work endpoint returns metadata about research works in the Meta knowledge gr
 |studyType|string|Only applicable for type: ClinicalTrial. Values are `Interventional` and `Observational`|
 |subject|array|Subject terms associated with a work|
 |url|string|Link to journal or repository site|
-|contributors|array|A listing of contributors to the work, including authors, collaborators. It will also include author's affiliation information.|
+|contributors|array|A listing of contributors to the work, including authors, collaborators|
 |fundingOrganization|array|Contains information listing the funders of the work.|
 |container|object|Typically contains information about the publication of the work, but more generally the information here is about the container of the work.|
 |reference|array|Works appearing in the reference list|
@@ -51,13 +51,7 @@ A single work will have a shape in the form:
                         "orc_id": "ORC_ID"
                     },
                     "name": "Author Name",
-                    "authorIndex": 0,
-                    "organization": {
-                        "name": "Org Name",
-                        "identifiers": {
-                            "ror": "ROR identifier"
-                        }
-                    }
+                    "authorIndex": 0
                 }
             ],
             "fundingOrganization": [
