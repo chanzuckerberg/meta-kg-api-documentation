@@ -1,11 +1,11 @@
-## The Meta API is currently in pilot phase. Please contact us if you are interested in trying it out.
+## The CZKG API is currently in pilot phase. Please contact us if you are interested in trying it out.
 
-# Meta API
-Meta is a technology project at the Chan Zuckerberg Initiative (CZI). CZI Science's mission is to support the science and technology that will make it possible to cure, manage, or prevent all diseases. Meta is an open, comprehensive knowledge-graph discovery system to enable scientists, physicians, students, patients, and the scientific community to navigate the corpus of biomedical and scientific information. By mapping science as it happens, Meta's mission is to make it possible for researchers to look beyond their field of expertise, generate new hypotheses, understand connections and context, and thus accelerate the process of science as a whole. 
+# CZKG API
+CZKG is a technology project at the Chan Zuckerberg Initiative (CZI). CZI Science's mission is to support the science and technology that will make it possible to cure, manage, or prevent all diseases. CZKG is an open, comprehensive knowledge-graph discovery system to enable scientists, physicians, students, patients, and the scientific community to navigate the corpus of biomedical and scientific information. By mapping science as it happens, CZKG's mission is to make it possible for researchers to look beyond their field of expertise, generate new hypotheses, understand connections and context, and thus accelerate the process of science as a whole. 
 
-The Meta API enables users to query the Meta knowledge graph. The graph database contains bibliographic information for biomedical research output (referred to as 'works') such as title, abstract, journal or repository name, author, keywords, references, etc. A broad range of research outputs is represented in the knowledge graph including journal articles, preprints, datasets, protocols, software, conference proceedings and clinical trial reports.
+The CZKG API enables users to query the CZKG knowledge graph. The graph database contains bibliographic information for biomedical research output (referred to as 'works') such as title, abstract, journal or repository name, author, keywords, references, etc. A broad range of research outputs is represented in the knowledge graph including journal articles, preprints, datasets, protocols, software, conference proceedings and clinical trial reports.
 
-__The Meta API is HTTP read-only.__
+__The CZKG API is HTTP read-only.__
 
 ## Common Operations
 Each API endpoint supports four basic operations. 
@@ -29,7 +29,7 @@ The API has the following resources:
 * [Work](https://github.com/chanzuckerberg/meta-kg-api-documentation/blob/main/works.md)
 * [Person](https://github.com/chanzuckerberg/meta-kg-api-documentation/blob/main/persons.md)
 
-To visualize and interact with the API resources, visit the Meta API's [Swagger docs](https://api-docs.meta.org/).
+To visualize and interact with the API resources, visit the CZKG API's [Swagger docs](https://api-docs.czkg.org/).
 
 ## Issues & Feature Requests
 We welcome feedback on the API. Please report any system issues or request features by creating an [issue in this repository](https://github.com/chanzuckerberg/meta-kg-api-documentation/issues).
